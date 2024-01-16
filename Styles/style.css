@@ -16,7 +16,7 @@
   --menu_color: #424247;
   --inputs_background_color: rgba(255, 255, 255, 0.3);
 }
-body {
+.primary_container {
   margin: 0 135px;
 }
 .primary_heading {
@@ -178,6 +178,9 @@ main {
 .tour_message_contaienr h1 {
   padding-bottom: 20px;
 }
+.tour_points ul {
+  padding-left: 20px;
+}
 .tour_points li {
   padding: 20px 0;
   margin-left: 1.5em;
@@ -188,6 +191,7 @@ main {
 }
 .tour_button {
   margin-top: 45px;
+  cursor: pointer;
 }
 .tour_image img {
   max-width: 100%;
@@ -231,6 +235,7 @@ main {
 .single_destination_image img {
   max-width: 100%;
   height: auto;
+  border-radius: 16px;
 }
 .single_destination_image h1 {
   position: absolute;
@@ -262,15 +267,25 @@ main {
   gap: 20px;
 }
 .chooseUs_single_card {
-  padding: 32px 100px 32px 32px;
+  padding: 32px 50px 32px 32px;
   text-align: left;
   border-radius: 16px;
-  border: 1px solid rgba(251, 181, 99, 0.2);
   background: rgba(251, 181, 99, 0.05);
+  margin-bottom: 24px;
 }
 .chooseUs_single_card h2 {
   font-size: 1.5rem;
   margin-top: 20px;
+}
+.chooseUs_card1 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.chooseUs_card2 {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
 }
 .more_card_containerr {
   max-width: 645px;
@@ -287,6 +302,59 @@ main {
 }
 /* Choose Us Section ended */
 
+/* Review section(Bonus Part) started */
+.review_section_container {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.review_section_container h1 {
+  width: 645px;
+  padding: 20px;
+}
+.extra_review_heading {
+  color: var(--secondary_color);
+}
+.review_message {
+  margin: 50px 0;
+}
+.review_cards_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.review_card {
+  flex: 1;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(233, 68, 68, 0.03);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviewed_person_container {
+  margin: 20px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.reviewed_person_container img {
+  width: 50px;
+  height: 50px;
+}
+
+.person_info h3 {
+  color: var(--primary_color);
+  padding: 10px 0;
+}
+/* Review section(Bonus Part) ended */
+
 /* Newsletter section started */
 .newsletter_section_container {
   margin: 100px 0;
@@ -295,6 +363,10 @@ main {
   gap: 20px;
   text-align: left;
   align-items: center;
+}
+.horizontal_line {
+  background: rgba(19, 19, 24, 0.1);
+  height: 1px;
 }
 .newsletter_input_container {
   border-radius: 16px;
@@ -324,15 +396,19 @@ main {
 }
 .newsletter_button {
   margin: 16px 0;
+  cursor: pointer;
 }
 .newsletter_image_contaienr {
   position: relative;
 }
+.newsletter_image_contaienr img {
+  width: 100%;
+}
 .newsletter_badge {
   max-width: 250px;
   position: absolute;
-  bottom: 53px;
-  right: 10px;
+  bottom: 56px;
+  right: 13px;
   border-radius: 16px;
   background: var(--secondary_color);
   transform: rotate(-19.628deg);
@@ -356,12 +432,12 @@ main {
 
 /* Footer section started */
 .footer_contaienr {
-  margin: 0 0 100px 0;
-  padding: 0 150px;
+  padding: 100px 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: rgba(19, 19, 24, 0.05);
 }
 .footer_icon_container {
   display: flex;
@@ -378,8 +454,11 @@ main {
 .footer_icon_container p > .extra_style {
   color: var(--secondary_color);
 }
+.footer_message {
+  max-width: 850px;
+}
 .social_link_container {
-  padding: 35px 0;
+  padding: 35px 0 50px 0;
   display: flex;
   gap: 35px;
 }
@@ -387,8 +466,13 @@ main {
   font-size: 24px;
   color: var(--primary_color);
 }
+.footer_horizontal_line {
+  background: rgba(19, 19, 24, 0.1);
+  height: 1px;
+  width: 100%;
+}
 .rights_message {
-  margin-top: 80px;
+  margin-top: 50px;
   color: var(--primary_color);
   font-size: 1rem;
   font-weight: 300;
