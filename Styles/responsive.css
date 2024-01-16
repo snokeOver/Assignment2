@@ -106,6 +106,53 @@
   .bottom_card {
     padding: 20px 15px;
   }
+  /* Newsletter Section */
+  .newsletter_section_container {
+    margin: 10px 0;
+    flex-direction: column;
+  }
+  .newsletter_image_contaienr img {
+    width: 100%;
+    height: 250px;
+  }
+  .newsletter_badge {
+    max-width: 180px;
+    bottom: 28px;
+    right: 4px;
+    transform: rotate(-19.628deg);
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .newsletter_badge h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .newsletter_badge h1 {
+    font-size: 1.25rem;
+  }
+  /* footer section started */
+  .footer_contaienr {
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer_icon_container img {
+    width: 30px;
+    height: 25px;
+  }
+  .footer_icon_container p {
+    font-size: 1.5rem;
+  }
+  .footer_icon_container p > .extra_style {
+    font-size: 1.5rem;
+  }
+  .rights_message {
+    margin-top: 10px;
+  }
 }
 
 /* For Tablet devices */
